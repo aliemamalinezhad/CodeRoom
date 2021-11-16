@@ -3,14 +3,14 @@ from django.utils.translation import gettext as _
 
 
 class GeneralModel(models.Model):
-    created_at = models.DateTimeField(
+    create_at = models.DateTimeField(
         verbose_name=_('Created Time'),
-        auto_now_add=True,
+        auto_now_add=True
     )
     updated_at = models.DateTimeField(
         verbose_name=_('Updated Time'),
-        auto_now=True,
+        auto_now=True
     )
 
     class Meta:
-        Abstract = True
+        abstract = True
