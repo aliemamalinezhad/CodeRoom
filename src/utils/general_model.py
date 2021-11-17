@@ -6,6 +6,7 @@ class GeneralModel(models.Model):
     create_at = models.DateTimeField(
         verbose_name=_('Created Time'),
         auto_now_add=True
+
     )
     updated_at = models.DateTimeField(
         verbose_name=_('Updated Time'),
@@ -14,3 +15,4 @@ class GeneralModel(models.Model):
 
     class Meta:
         abstract = True
+
